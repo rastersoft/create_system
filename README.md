@@ -48,7 +48,7 @@ to the physical devide.
 
 ## CONTACTING THE AUTHOR ##
 
-Sergio Costas 
-http://www.rastersoft.com 
-raster@rastersoft.com 
+Sergio Costas  
+http://www.rastersoft.com  
+raster@rastersoft.com  
 rastersoft@gmail.com
