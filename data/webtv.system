@@ -1,0 +1,12 @@
+system_path : /sistema_final
+
+binary: /bin/bash
+binary: /bin/busybox
+binary: /usr/bin/transmission-daemon3
+copy: /usr/share/transmission
+copy: /init
+copy: /lib/libm.so.6
+touch: /no_base_system
+link: /bin/ls busybox
+link: /bin/cp busybox
+link: /bin/telnetd busybox

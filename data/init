@@ -1,0 +1,29 @@
+#!/bin/bash
+
+# copiamos los ficheros base de configuracion si no existen
+# ya los ficheros definitivos
+
+for BASE_FILE in `ls /etc/base_config`; do
+	FILENAME={$BASE_FILE%.base}
+	if [ ! -f /etc/${FILENAME} ]
+	then
+		cp /etc/base_config/${BASE_FILE} /etc/${FILENAME}
+	fi
+done
+
+# Lanzamos el servidor principal
+
+#/bin/series_rss -C/config_series.txt -I2 -D/etc/downloads.txt &
+
+# Lanzamos los servicios
+
+for i in `ls /etc/scripts/tolaunch`; do
+	/etc/scripts/$i start
+done
+
+# Y el demonio de telnet
+
+telnetd -p 3335 -F -l /bin/bash &
+
+exit 0
+
