@@ -27,7 +27,8 @@ Create_system uses a configuration file. Here is an example:
     link: /bin/cp busybox
     link: /bin/telnetd busybox
 
- * *system_path* defines where to generate the environment. The default value is */final_system/bg_apps*, which is a suitable value for the WebTV system
+ * *system_path* defines where to generate the environment. The default value
+ is */final_system/bg_apps*, which is a suitable value for the WebTV system
  * *binary* specifies one binary to add to the final system. Create_system will
  also add all the libraries needed by it (using **ldd** to discover them). Of
  course, it can't detect libraries loaded in execution time.
@@ -37,17 +38,17 @@ Create_system uses a configuration file. Here is an example:
  * *link* creates a symbolic link in the destination system called as the first
  parameter, and pointing to the second one *as is*
 
-Create_system must be launch from a complete original system, using a chroot jail or a
+*Create_system* must be launch from a complete original system, using a chroot jail or a
 container. Remember that you can use qemu to easily run non-x86 code in your PC.
 To do so, just copy the *qemu-arch-static* executable to the */usr/bin* folder
-in your full environment (being *arch* the architecture of your target system)
+inside your full environment (being *arch* the architecture of your target system)
 and launch the container or chroot environment as usual. Once inside, you can
 run *create_system.py* to generate the definitive environment that you will copy
 to the physical devide.
 
 ## CONTACTING THE AUTHOR ##
 
-Sergio Costas
-http://www.rastersoft.com
-raster@rastersoft.com
+Sergio Costas 
+http://www.rastersoft.com 
+raster@rastersoft.com 
 rastersoft@gmail.com
