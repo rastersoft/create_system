@@ -27,8 +27,7 @@ Create_system uses a configuration file. Here is an example:
     link: /bin/cp busybox
     link: /bin/telnetd busybox
 
- * *system_path* defines where to generate the environment. The default value
- is */final_system/bg_apps*, which is a suitable value for the WebTV system
+ * *system_path* defines where to generate the environment. The default value is */final_system/bg_apps*, which is a suitable value for the WebTV system
  * *binary* specifies one binary to add to the final system. Create_system will
  also add all the libraries needed by it (using **ldd** to discover them). Of
  course, it can't detect libraries loaded in execution time.
