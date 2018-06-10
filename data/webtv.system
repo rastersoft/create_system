@@ -2,7 +2,7 @@ system_path : /sistema_final
 
 binary: /bin/bash
 binary: /bin/busybox
-binary: /usr/bin/transmission-daemon3
+binary: /usr/bin/transmission-daemon
 copy: /usr/share/transmission
 copy: /init
 copy: /lib/libm.so.6

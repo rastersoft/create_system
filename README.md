@@ -38,6 +38,9 @@ Create_system uses a configuration file. Here is an example:
  * *link* creates a symbolic link in the destination system called as the first
  parameter, and pointing to the second one *as is*
 
+By default, it will search for the configuration file called */etc/webtv.system*, but
+it is possible to pass it the path to another configuration file as the first parameter. 
+
 *Create_system* must be launch from a complete original system, using a chroot jail or a
 container. Remember that you can use qemu to easily run non-x86 code in your PC.
 To do so, just copy the *qemu-arch-static* executable to the */usr/bin* folder
@@ -48,7 +51,7 @@ to the physical devide.
 
 ## CONTACTING THE AUTHOR ##
 
-Sergio Costas  
+Sergio Costas Rodriguez  
+rastersoft@gmail.com  
 http://www.rastersoft.com  
-raster@rastersoft.com  
-rastersoft@gmail.com
+https://gitlab.com/rastersoft/create_system
